@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contactez-nous">
+        <h1>contactez-nous</h1>
+        <p>un problème, une question, envie de nous envoyer un message? n'ésitez pas à utiliser ce formulaire pour prendre contact avec contactez-nous!</p>
+        <form action="/page-traitement-données" methode="post">
+            <div>
+                <label for="nom">votre nom</label>
+                <input type="text" id="nom" placeholder="martin" required>
+            </div>
+            <div>
+                <label for="e-mail">votre e-mail</label>
+                <input type="e-mail" id="e-mail" name="e-mail" placeholder="monadresse@gmail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value=""diabled selected hidden>choisissez le sujet de votre message</option>
+                    <option value="peoblème-compte">problème avec mon compte</option>
+                    <option value="Question-produit">Question à propos d'un produit</option>
+                    <option value="Suiv-commande">Suivi de ma commande</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">votre message</label>
+                <textarea id="message" name="Message" placeholder="Bonjour, je vous contacte car..." required></textarea>
+            </div>
+            <div>
+                <button type="submit">envoyer mon message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
